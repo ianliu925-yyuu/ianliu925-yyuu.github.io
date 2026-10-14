@@ -1,0 +1,97 @@
+<!doctype html>
+<html lang="zh-Hant">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Yu｜網頁與資料分析接案</title>
+<meta name="description" content="中興大學應用數學系學生，接網頁製作、小工具開發與資料分析案件。">
+<style>
+:root{--bg:#f7f7f5;--card:#fff;--text:#1d1d1f;--muted:#6b6b70;--line:#e3e3e0;--accent:#2155d6;--accent-soft:#e8eefc}
+@media (prefers-color-scheme:dark){:root{--bg:#141416;--card:#1d1d20;--text:#ececef;--muted:#a0a0a8;--line:#2e2e33;--accent:#7aa2ff;--accent-soft:#1f2a44}}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--text);font-family:-apple-system,BlinkMacSystemFont,"Segoe UI","PingFang TC","Noto Sans TC","Microsoft JhengHei",sans-serif;line-height:1.7}
+.wrap{max-width:880px;margin:0 auto;padding:0 20px}
+header{padding:72px 0 40px}
+h1{font-size:2.2rem;margin:0 0 8px;line-height:1.3}
+.lead{font-size:1.1rem;color:var(--muted);margin:0 0 24px}
+.btn{display:inline-block;padding:10px 20px;border-radius:10px;background:var(--accent);color:#fff;text-decoration:none;font-weight:600;margin:0 8px 8px 0}
+.btn.ghost{background:transparent;color:var(--accent);border:1px solid var(--accent)}
+section{padding:32px 0;border-top:1px solid var(--line)}
+h2{font-size:1.4rem;margin:0 0 20px}
+.tags{display:flex;flex-wrap:wrap;gap:8px;padding:0;margin:0;list-style:none}
+.tags li{background:var(--accent-soft);color:var(--accent);padding:4px 12px;border-radius:999px;font-size:.92rem}
+.card{background:var(--card);border:1px solid var(--line);border-radius:14px;overflow:hidden}
+.card img{display:block;width:100%;border-bottom:1px solid var(--line)}
+.card .body{padding:20px}
+.card h3{margin:0 0 6px}
+.card p{margin:0 0 12px;color:var(--muted)}
+.card a{color:var(--accent);font-weight:600;text-decoration:none;margin-right:16px}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:16px}
+.svc{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:20px}
+.svc h3{margin:0 0 6px;font-size:1.05rem}
+.svc p{margin:0;color:var(--muted);font-size:.95rem}
+.svc .price{margin-top:10px;color:var(--text);font-weight:600}
+ol.steps{padding-left:1.2em;margin:0}
+ol.steps li{margin-bottom:6px}
+footer{padding:32px 0 48px;color:var(--muted);font-size:.9rem;border-top:1px solid var(--line)}
+@media (max-width:560px){header{padding:48px 0 28px}h1{font-size:1.7rem}}
+</style>
+</head>
+<body>
+<div class="wrap">
+<header>
+<h1>Hi，我是 Yu</h1>
+<p class="lead">中興大學應用數學系學生，在台中。幫店家、工作室和研究團隊做網頁、小工具和資料分析，用數學系的嚴謹把事情做對。</p>
+<a class="btn" href="#contact">聯絡我</a>
+<a class="btn ghost" href="#work">看作品</a>
+</header>
+
+<section>
+<h2>技能</h2>
+<ul class="tags">
+<li>HTML / CSS / JavaScript</li><li>響應式網頁（手機、電腦都好看）</li><li>GitHub Pages 架站</li><li>R 語言</li><li>統計與資料分析</li><li>資料自動化更新</li><li>線性代數、微積分</li>
+</ul>
+</section>
+
+<section id="work">
+<h2>作品</h2>
+<div class="card">
+<img src="img/portfolio-analyzer.png" alt="持倉分析網頁畫面" loading="lazy">
+<div class="body">
+<h3>持倉分析網頁</h3>
+<p>台股、美股的持股損益與資產配置工具。每天開盤前自動更新行情資料，輸入交易就能算出損益、配置比例和參考提示；持股只存在使用者自己的瀏覽器，不上傳。支援手機、深色模式。</p>
+<a href="https://ianliu925-yyuu.github.io/portfolio-analyzer/" target="_blank" rel="noopener">打開網站 →</a>
+<a href="https://github.com/ianliu925-yyuu/portfolio-analyzer" target="_blank" rel="noopener">原始碼</a>
+</div>
+</div>
+</section>
+
+<section>
+<h2>可以幫你做什麼</h2>
+<div class="grid">
+<div class="svc"><h3>店家形象網站</h3><p>一頁式介紹、營業時間、地圖、菜單或價目表，手機上也好用。</p><div class="price">NT$ 3,000 起</div></div>
+<div class="svc"><h3>表單與小工具</h3><p>預約、報名、計算機、簡單的內部管理工具，省下手動整理的時間。</p><div class="price">NT$ 5,000 起</div></div>
+<div class="svc"><h3>資料整理與分析</h3><p>Excel 資料清理、統計分析、R 圖表，適合研究生和小團隊。</p><div class="price">NT$ 2,000 起</div></div>
+</div>
+</section>
+
+<section>
+<h2>合作流程</h2>
+<ol class="steps">
+<li>聊需求：告訴我你想做什麼，我回覆報價和交件時間。</li>
+<li>確認內容：雙方確認頁面、功能、修改次數後，先付 30% 訂金。</li>
+<li>製作與修改：過程中給你看進度，在約定次數內修改。</li>
+<li>交付：上線並附使用說明，付清尾款。</li>
+</ol>
+</section>
+
+<section id="contact">
+<h2>聯絡我</h2>
+<p>有想法就來聊，報價不收費。</p>
+<a class="btn" href="https://github.com/ianliu925-yyuu" target="_blank" rel="noopener">GitHub</a>
+</section>
+
+<footer>© 2026 Yu · 台中</footer>
+</div>
+</body>
+</html>
